@@ -5,17 +5,19 @@ import os
 import datetime
 import xlsxwriter
 
-st_name = 'prat', 'lata'
+st_name = 'prathik', 'lata'
 def mark_present(st_name):
 
-	names = os.listdir('output/output')
+	names = os.listdir('output')
 	print(names)
 
-	sub = 'SAMPLE'
+	dt = str(datetime.date.today())
+	sub = dt.replace("-", "_").replace(":", "_").replace(" ", "_")
+	sub
 	
-	if not os.path.exists('attendance/' + sub + '.xlsx'):
+	if not os.path.exists('attendance/' + sub + '.xls'):
 		count = 2
-		workbook = xlsxwriter.Workbook('attendance/' + sub + '.xlsx')
+		workbook = xlsxwriter.Workbook('attendance/' + sub + '.xls')
 		print("Creating Spreadsheet with Title: " + sub)
 		sheet = workbook.add_worksheet() 
 		for i in names:
@@ -23,7 +25,7 @@ def mark_present(st_name):
 		    count += 1
 		workbook.close() 
 
-	rb = xlrd.open_workbook('attendance/' + sub + '.xlsx')
+	rb = xlrd.open_workbook('attendance/' + sub + '.xls')
 	wb = copy(rb)
 	sheet = wb.get_sheet(0)
 	sheet.write(1,1,str(datetime.datetime.now()))
@@ -32,13 +34,16 @@ def mark_present(st_name):
 	count = 2
 	for i in names:
 	    if i in st_name:
-              sheet.write(count, 1, 'P')
+        	sheet.write(count, 1, 'P')
+        	sheet.write(count, 2, datetime.datetime.now().strftime("%H:%M"))
 	    else:
-              sheet.write(count, 1, 'A')
+        	sheet.write(count, 1, 'A')
+        	sheet.write(count, 2, datetime.datetime.now().strftime("%H:%M"))
 	    sheet.write(count, 0, i)
 	    count += 1
 
-	wb.save('attendance/' + sub + '.xlsx')
+	wb.save('attendance/' + sub + '.xls')
 
 
 mark_present(st_name)
+#print(datetime.datetime.now())
