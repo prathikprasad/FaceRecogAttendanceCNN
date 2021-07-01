@@ -3,15 +3,15 @@
 An end-to-end face identification and attendance approach using Convolutional Neural Networks (CNN), which processes the CCTV footage or a video of the class and mark the attendance of the entire class simultaneously.
 
 ## Make sure to have following directory structure
-1. 'Main' directory: \n
+1. 'Main' directory:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(764).png" width="480">
-2. 'output' directory: \n
+2. 'output' directory:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(766).png" width="480">
-3. '20180402-114759' directory: \n
+3. '20180402-114759' directory:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(765).png" width="480">
-4. Each person's directory will look somewhat like: \n
+4. Each person's directory will look somewhat like:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(767).png" width="480">
-5. Output attendance folder: \n
+5. Output attendance folder:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(769).png" width="480">
 
 ## Libraries
