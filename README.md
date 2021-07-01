@@ -2,7 +2,7 @@
 
 An end-to-end face identification and attendance approach using Convolutional Neural Networks (CNN), which processes the CCTV footage or a video of the class and mark the attendance of the entire class simultaneously.
 
-# Make sure to have following directory structure
+## Make sure to have following directory structure
 1. 'Main' directory:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(764).png" width="480">
 2. 'output' directory:
@@ -14,7 +14,7 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 5. Output attendance folder:
 <img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(769).png" width="480">
 
-# Libraries
+## Libraries
 1. Tensorflow 1.14
 2. Numpy
 3. OpenCV
@@ -23,12 +23,12 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 6. scipy
 7. pickle
 
-# How to use
-## Installation
+## How to use
+### Installation
 1. Install the required libraries. (Conda environment preferred).
 2. Have all files and directories.
 3. To verify is everything installed properly run 'user_interface.py'.
-## Create Dataset
+### Create Dataset
 1. Run 'user_interface.py'
 2. Click on the 'Create' button.
 3. Type in name of person or ID number
@@ -37,12 +37,12 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 6. Hold 's' to save the face images. Take as many images as you can take. (approx. 80-100 preferred)
 7. Press 'q' to exit.
 8. Similarly create other datasets.
-## Training
+### Training
 1. Run 'user_interface.py'
 2. Click on the 'Train Model' button.
 3. Training may take several minutes (depending upon your system configuration).
 4. Once training is completed, a 'classifier.pkl' file will be generated.
-## Run
+### Run
 1. Run 'user_interface.py'
 2. Click on the 'Run' button.
 3. Select 'Webcam' fom the list and leave all fields blank.
