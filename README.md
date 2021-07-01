@@ -4,13 +4,15 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 
 # Make sure to have following directory structure
 1. 'Main' directory:
-<img src="https://github.com/aashishrai3799/Automated-Attendance-System-using-CNN/blob/master/images/image5.png" width="480">
+<img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(764).png" width="480">
 2. 'output' directory:
-<img src="https://github.com/aashishrai3799/Automated-Attendance-System-using-CNN/blob/master/images/image4.png" width="480">
+<img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(766).png" width="480">
 3. '20180402-114759' directory:
-<img src="https://github.com/aashishrai3799/Automated-Attendance-System-using-CNN/blob/master/images/image3.png" width="480">
-4. Each person's directory will look somewhat like
-<img src="https://github.com/aashishrai3799/Automated-Attendance-System-using-CNN/blob/master/images/image1.png" width="480">
+<img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(765).png" width="480">
+4. Each person's directory will look somewhat like:
+<img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(767).png" width="480">
+5. Output attendance folder:
+<img src="https://github.com/prathikprasad/FaceRecogAttendanceCNN/blob/main/images/Screenshot%20(769).png" width="480">
 
 # Libraries
 1. Tensorflow 1.14
