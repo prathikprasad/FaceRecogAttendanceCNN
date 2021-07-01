@@ -1,7 +1,6 @@
-# Automated-Attendance-System-using-CNN
+# Contactless Attendance Systen using Deep Learning
 
-An end-to-end face identification and attendance approach using Convolutional Neural Networks (CNN), which processes the CCTV footage or a video of the class and mark the attendance of the entire class simultaneously. One of the main advantages of the proposed solution is its robustness against usual challenges like occlusion (partially visible/covered faces), orientation, alignment and luminescence of the classroom.
-
+An end-to-end face identification and attendance approach using Convolutional Neural Networks (CNN), which processes the CCTV footage or a video of the class and mark the attendance of the entire class simultaneously.
 
 # Make sure to have following directory structure
 1. 'Main' directory:
@@ -22,24 +21,23 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 6. scipy
 7. pickle
 
-
 # How to use
 ## Installation
 1. Install the required libraries. (Conda environment preferred).
-2. Download the pre-trained model from the link given below and copy to the main directory.
-3. Make sure to have the afformantioned directory fomat (you've to manually create two folders named "attendance" and "output" in the main directory | refer to the "Main" directory structure).
-4. To verify is everything installed properly run 'user_interface.py'.
+2. Have all files and directories.
+3. To verify is everything installed properly run 'user_interface.py'.
 ## Create Dataset
 1. Run 'user_interface.py'
 2. Click on the 'Create' button.
-3. Select 'webcam' if you wish to create live dataset. (you can leave all other fileds empty)
-4. Click on the 'Continue' button to start streaming webcam feed.
-5. Press 's' to save the face images. Take as many images as you can take. (approx. 80-100 preferred)
-6. Press 'q' to exit.
-7. Likewise create other datasets.
+3. Type in name of person or ID number
+4. Select 'webcam' if you wish to create live dataset. (you can leave all other fileds empty)
+5. Click on the 'Create Dataset' button to start streaming webcam feed.
+6. Hold 's' to save the face images. Take as many images as you can take. (approx. 80-100 preferred)
+7. Press 'q' to exit.
+8. Similarly create other datasets.
 ## Training
 1. Run 'user_interface.py'
-2. Click on the 'Train' button.
+2. Click on the 'Train Model' button.
 3. Training may take several minutes (depending upon your system configuration).
 4. Once training is completed, a 'classifier.pkl' file will be generated.
 ## Run
@@ -48,6 +46,3 @@ An end-to-end face identification and attendance approach using Convolutional Ne
 3. Select 'Webcam' fom the list and leave all fields blank.
 4. Click on 'Mark Attendance' button.
 5. Attendance sheet will be generated automatically with current date/time.
-
-# Download pre-trained model:
-https://drive.google.com/open?id=1EXPBSXwTaqrSC0OhUdXNmKSh9qJUQ55-
